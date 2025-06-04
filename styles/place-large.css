@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: darkblue;
+  --tertiary-color: #fff;
+  --other-color: red;
+  --body-font: "Roboto Mono", monospace;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    font-size: 30px;
+  }
+
+  body {
+    font-family: var(--body-font);
+  }
+
+  main {
+    position: relative;
+  }
+  .data {
+    position: absolute;
+    opacity: 0.9;
+    margin-bottom: 10%;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    top: 30px;
+    left: 40px;
+  }
+  .hero {
+    height: 90vh;
+  }
+
+  .weather {
+    opacity: 0.9;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    bottom: 20px;
+    color: var(--primary-color);
+    right: 40px;
+  }
+  .data h2 {
+    margin: 10px 70px 0px -30px;
+    color: var(--primary-color);
+    background-color: var(--other-color);
+    padding: 1rem;
+  }
+  .weather img {
+    display: none;
+  }
+  .weather h2 {
+    margin: 10px 70px 0px -30px;
+    margin-top: 10px;
+    color: var(--primary-color);
+    background-color: var(--other-color);
+    padding: 1rem;
+  }
+  .weather h2::after {
+    content: "⛅";
+    float: right;
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Prince Godwyll">
+  <meta name="description"
+    content="A portfolio website of myself trying to display my abilities and ideas as a developer to my audience">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/portfolio-large.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/all.min.css">
+  <link rel="stylesheet" href="styles/fontawesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <title>Tadiwa's Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <h1>Tadiwanashe Divine Mphame<span>pg</span></h1> 
+    <div class="menu">
+      <span id="menu"></span>
+    </div>
+    <nav class="navigation">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">Projects</a>
+    </nav>
+    <a href="#" id="me">contact me</a>
+  </header>
+
+  <main>
+    <section class="hero" id="portfolio">
+      <div class="hero-content">
+        <p>
+          <span>Hi</span> <span>My name is Tadiwanashe Divine Mphame</span>
+          <span>Fullstack Developer,</span> This site is to showcase my skills,
+          experience, and projects to potential employers, clients, and
+          collaborators. Again, it helps to demonstrates my expertise and
+          versatility as a developer, setting me apart from others in the
+          industry.Having a portfolio site as a developer also provides a
+          centralized platform to share your accomplishments, making it easier
+          to attract new opportunities and grow your network. Additionally,
+          maintaining a portfolio site will help me reflect on my progress,
+          identify areas for improvement, and refine my skills. <br>
+          <button id="download">download resume</button>
+        </p>
+        <img src="images/my-img.jpg" alt="my image" loading="lazy">
+      </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+      <div class="main-info">
+        <h2>contact page</h2>
+        <h3>Get in touch</h3>
+        <p>
+          I'd love to hear from you! Have a question? I'm all ears.
+        </p>
+        <h3>Contact Information</h3>
+        <ul>
+          <li>Email: [mphametadiwanshe@gmail.com]</li>
+          <li>Phone: [+27 614744770]</li>
+          <li>Address: [602 Bauhinia flat Relly Street]</li>
+        </ul>
+        
+          <h3>Social Media:</h3>
+          <p>Stay connected with me on social media:</p>
+
+        <ul>
+          <li>LinkedIn: <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+          <li>Twitter: <a href="">Twitter</a></li>
+          <li>Instagram: <a href="">Instagram</a></li>
+          <li>Facebook: <a href="">Facebook</a></li>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-me">
+        <h3>send a message</h3>
+        <form action="submitted.html" method="get" class="contact-form">
+          <label>Name:<input type="text" placeholder="fullname" required></label>
+          <label>Email:<input type="email" placeholder="email here please" required></label>
+          <label>Phone number:<input type="tel" placeholder="phone number here"></label>
+          <label>Subject:<input type="text" placeholder="your subject of your message here" required></label>
+          <label>Message Subject:<textarea name="msg-subject" id="msg-subject" rows="4" cols="2" required></textarea>
+          </label>
+          <input type="submit" name="submit" value="Send Message">
+        </form>
+      </div>
+    </section>
+
+    <section class="about-me" id="about">
+      <h2>about me</h2>
+      <picture>
+        <source srcset="images/my-img.jpg" media="max-widht:1025px">
+        <source srcset="images/my-img.jpg" media="max-widht:678px">
+        <img src="images/my-img.jpg" alt="about-me image" loading="lazy">
+      </picture>
+      <div class="about-content">  
+        <p>As a driven and innovative software developer, I craft cutting-edge solutions that bridge the gap between
+          technology and business. With a strong foundation in computer science and expertise in [programming
+          languages/technologies], I excel at building scalable, efficient, and user-centric applications. Passionate about
+          staying up-to-date with industry trends, I continuously refine my skills to deliver high-quality solutions. My
+          portfolio showcases a selection of my notable projects, demonstrating my ability to transform complex problems
+          into seamless user experiences. Let's collaborate to bring your vision to life. <span id="about-more">Read more</span>
+        </p>  
+
+        <h3>experience</h3>
+          <ul>
+            <li>Python - 3years</li>
+            <li>Javascript - 1year</li>
+            <li>Proficeincy and ability to use Javascript Framworks</li>
+            <li>Proficeincy and ability to use Python web framworks</li>
+          </ul>
+
+        <h3>Projects</h3>
+          <ul>
+            <li>Shoping cart app</li>
+            <li>To do list</li>
+            <a href="">view more of my projects</a>
+        </ul>
+      </div>
+    </section>
+</main>
+
+  <footer>
+      <div class="footer-nav">  
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">projects</a>
+      </div>
+
+      <div class="footer-icons">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+
+    <div class="footer-content">
+      <p id="year"></p>
+      <p id="lastModification"></p>
+    </div>
+
+
+  </footer>
+  <script src="scripts/porfolio.js" defer='defer'></script>
+</body>
+</html>
+

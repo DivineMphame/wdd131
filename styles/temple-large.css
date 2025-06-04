@@ -1,0 +1,66 @@
+:root {
+  --background-color: darkblue;
+  --text-color: #fff;
+  --hover-backgorund: #fff;
+  --hover-color: darkblue;
+  --header-font: "Open Sans", sans-serif;
+  --body-font: "Roboto", sans-serif;
+}
+
+@media only screen and (min-width: 1075px) {
+  .header {
+    width: 100%;
+    font-family: var(--header-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+  }
+
+  .header h1 {
+    font-family: var(--header-font);
+    letter-spacing: 2px;
+    color: var(--text-color);
+    font-size: 50px;
+    font-variant: small-caps;
+  }
+
+  /* Navigation styles */
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: darkblue;
+    color: var(--text-color);
+  }
+
+  .navigation a {
+    transition: ease 0.5s;
+    padding: 1rem;
+    border-top: 1px solid darkblue;
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline;
+  }
+
+  .navigation a:hover {
+    background-color: var(--hover-backgorund);
+    color: var(--hover-color);
+  }
+  #menu {
+    display: none;
+  }
+
+  .fig-section {
+    grid-template: auto auto auto/ auto auto auto;
+    gap: 40px;
+  }
+  .fig-section img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .fig-section figure {
+    margin: 1rem 0;
+  }
+}

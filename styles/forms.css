@@ -1,0 +1,177 @@
+:root {
+  --background-color:  rgb(189, 198, 247);
+  --input-background-color: #eee;
+  --header-background: rgb(107, 107, 255);
+  --font: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header,
+footer {
+  color: #eee;
+  background-color: var(--header-background);
+  width: 100%;
+  font-family: var(--font);
+  min-width: 400px;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+main {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.p-review {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding: 20px 0px 0px 0px;
+  height: auto;
+  background-color: var(--background-color);
+}
+
+.p-review span {
+  font-family: var(--font);
+  font-weight: 400;
+}
+.p-review input,textarea,select{
+  background-color: var(--input-background-color);
+}
+
+.p-review .radio,
+.checkbox {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* stlye all radio inputs  */
+.radio {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(3, auto);
+  max-width: 700px;
+  width: 100%;
+}
+.radio-label1{
+  grid-column: 1/2;
+}
+
+.radio-label{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.radio-input{
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+  .radio-input input{
+    margin-right: 4.5%;
+  }
+  
+.checkbox label{
+  color: #fff;
+}
+/* style of radio inputs ends here */
+
+/* style the select element */
+.p-review select {
+  border: none;
+  font-family: var(--font);
+  border-radius: 6px;
+  margin-left: 0.5rem;
+  font-size: 20px;
+  height: 40px;
+  width: 94%;
+  max-width: 700px;
+  outline: none;
+}
+
+/* styling checkbox inputs here */
+.p-review .checkbox {
+  margin-right: 6px;
+}
+
+/* style of checkbox inputs ends here */
+
+/*style genereal labels*/
+.p-review label {
+  font-family: var(--font);
+  color: #000;
+  font-size: 16px;
+  display: block;
+  margin-left: 0.5rem;
+}
+
+/* style specific input elements */
+.p-review input[type="text"] {
+  border-radius: 6px;
+  display: block;
+  height: 40px;
+  border: none;
+  padding: 0.75rem;
+  width: 96%;
+  max-width: 700px;
+  outline: none;
+}
+
+.p-review input[type="date"] {
+  display: block;
+  font-size: 20px;
+  width: 96%;
+  max-width: 700px;
+}
+
+.p-review .checkbox input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 18px;
+  height: 18px;
+}
+
+.p-review textarea {
+  height: 80px;
+  border-radius: 6px;
+  width: 94%;
+  border: none;
+  padding: 0.75rem;
+  margin-left: 0.5rem;
+  margin-bottom: 1%;
+  resize: none;
+  max-width: 700px;
+  outline: none;
+}
+
+.p-review input[type="submit"] {
+  height: 40px;
+  border-radius: 6px;
+  width: 94%;
+  font-family: var(--font);
+  background-color: var(--input-background-color);
+  color: #000;
+  font-size: 17px;
+  margin-left: 0.5rem;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  max-width: 700px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+footer{
+  font-size: 18px;
+  color: #eee;
+}
+
+
+@media screen and (max-width:768px) {
+  .radio-input input{
+    margin-right: 6.5%;
+  }
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  font-weight: 100;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  backdrop-filter: blur(2px);
+  background-color: darkblue;
+  top: 0;
+}
+.container-element h1 {
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.header span{
+  color: yellow;
+  font-size: 20px;
+}
+
+.navigation-content {
+  margin: auto;
+  height: 8vh;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.856);
+}
+
+.navigation-content a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: clamp(15px, 18px, 20px);
+  transition: ease 0.5s;
+  color: darkblue;
+  font-weight: 400;
+}
+
+.navigation-content a:hover {
+  border-bottom: 1px solid darkblue;
+}
+
+.main {
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+  column-gap: 10px;
+  display: grid;
+  border-radius: 10px 10px 0 0;
+  grid-template: auto auto/ auto auto;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 10px 10px 0 0;
+}
+
+.aside-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.card #about-me,
+#aside-head {
+  color: white;
+  background-color: darkblue;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.about-self {
+  padding: 0.5rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+.about-self figcaption {
+  font-size: 13px;
+  text-align: center;
+  color: darkblue;
+}
+
+#country {
+  text-align: center;
+  font-size: 30px;
+  color: darkblue;
+  padding: 1rem;
+}
+hr {
+  width: 80%;
+  margin: auto;
+}
+.about-self img {
+  width: auto;
+  padding: 0.5rem;
+  height: 100px;
+}
+
+.footer {
+  width: 100%;
+  margin: auto;
+  background-color: darkblue;
+  padding: 1.5rem;
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+}
+.footer p:last-child {
+  text-align: center;
+  color: yellow;
+  padding: 0.5rem;
+  font-size: 17px;
+}
+
+.footer p {
+  font-size: 20px;
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+  .about-self {
+    padding: 0.5rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .about-self p {
+    font-size: 12px;
+  }
+}
