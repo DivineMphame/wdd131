@@ -6,7 +6,7 @@ const getLastModified = getlasModification.toLocaleString();
 const year = document.querySelector("#year");
 const lasModification = document.querySelector("#LastModification");
 
-year.textContent = `${currentYear} Prince Godwyll Accra Ghana.`;
+year.textContent = `${currentYear} Tadiwanashe Divine Mphame Pretoria South Africa.`;
 lasModification.textContent = getLastModified;
 
 const tempCelcius = 20;
