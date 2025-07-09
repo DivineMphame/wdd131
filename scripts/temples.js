@@ -2,7 +2,7 @@
 const currentYear = new Date().getFullYear();
 const footerMsg = document.querySelector("#year");
 
-footerMsg.textContent = `${currentYear} Tadiwanashe Divine Mphame Pretoria South Africa.`;
+footerMsg.textContent = `${currentYear} Tadiwanashe Adelaide Divine Mphame Pretoria South Africa.`;
 ModifiedElement = document.getElementById("lastModification");
 const getLastModified = new Date(document.lastModified);
 actDate = getLastModified.toLocaleString();
