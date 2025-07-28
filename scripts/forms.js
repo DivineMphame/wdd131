@@ -47,7 +47,7 @@ const lastModified = document.querySelector("#lastModification");
 // declare a new date
 const year = new Date();
 const currentYear = year.getFullYear();
-newYear.textContent = `${currentYear} Prince Godwyll Ghana, Accra.`;
+newYear.textContent = `${currentYear} Tadiwanashe Adelaide Divine Mphame South Africa, Pretoria.`;
 
 const lastModification = new Date(document.lastModified);
 const actModified = lastModification.toLocaleString();
